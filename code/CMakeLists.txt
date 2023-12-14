@@ -1248,7 +1248,7 @@ IF (ASSIMP_WARNINGS_AS_ERRORS)
         -Wno-declaration-after-statement
       )
     ELSE()
-      TARGET_COMPILE_OPTIONS(assimp PRIVATE /W4 /WX)
+      TARGET_COMPILE_OPTIONS(assimp PRIVATE /W4 /WX-)
     ENDIF()
   ELSE()
     TARGET_COMPILE_OPTIONS(assimp PRIVATE -Wall -Werror)
